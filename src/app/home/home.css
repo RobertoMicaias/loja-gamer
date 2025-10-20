@@ -1,0 +1,64 @@
+main {
+  min-height: 500px;
+  background-color: #b0c8e0;
+}
+
+
+#SectionGay {
+  min-height: 400px;
+}
+
+#SectionGay img {
+  height: 500px;
+  object-fit: cover;
+}
+
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.dev/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+
+mat-grid-list {
+  margin: 10px 0px;
+}
+
+mat-grid-tile {
+  padding: 2px;
+  border-radius: 30px;
+}
+
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+
+mat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-card-actions {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+mat-card-actions p {
+  font-size: 18px;
+  color: red;
+}
+
+img[mat-card-image] {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
