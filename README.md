@@ -1,59 +1,111 @@
-# LojaGamer
+# 🕹️ Loja Gamer
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+Aplicação Angular integrada com **JSON Server**, desenvolvida para **listagem e cadastro de produtos**.  
+Este projeto demonstra o consumo de API REST fake via HTTP, o uso de **Angular Material**, **Bootstrap**, e a estrutura modular do Angular.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Tecnologias Utilizadas
 
+- **Angular 17**
+- **TypeScript**
+- **Bootstrap 5**
+- **Angular Material**
+- **JSON Server**
+
+---
+
+## ⚙️ Como Executar o Projeto
+
+### 1️⃣ Instalar as dependências
 ```bash
+npm install
+
+2️⃣ Iniciar o servidor JSON (API) | Start the JSON Server (API)
+npx json-server --watch db.json --port 3000
+
+
+📡 A API ficará disponível em | The API will be available at:
+👉 http://localhost:3000/produtos
+
+3️⃣ Iniciar a aplicação Angular | Start the Angular Application
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+🌐 Acesse em | Access at:
+👉 http://localhost:4200
 
-## Code scaffolding
+🧩 Funcionalidades | Features
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+✅ Listagem de produtos — Consome dados da API JSON Server.
+✅ Cadastro de produtos — Formulário conectado à API.
+✅ Feedback visual após o cadastro.
+✅ Design responsivo com Angular Material.
+✅ Componentização modular (Home, Login, Footer, Lista e Cadastro).
 
-```bash
-ng generate component component-name
-```
+✅ Product listing — Fetches data from the JSON Server API.
+✅ Product registration — Form bound to API via service.
+✅ Visual feedback after successful registration.
+✅ Responsive design using Angular Material.
+✅ Modular components (Home, Login, Footer, Product List, Product Register).
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+📊 Estrutura de Pastas | Project Structure
+src/
+ ├── app/
+ │   ├── home/
+ │   ├── login/
+ │   ├── footer/
+ │   ├── produtos-lista/
+ │   ├── produtos-cadastro/
+ │   └── services/
+ ├── assets/
+ └── public/
 
-```bash
-ng generate --help
-```
+ 📄 Diagrama de Caso de Uso | Use Case Diagram
 
-## Building
+📁 O diagrama visual do sistema encontra-se em:
+The visual use case diagram is located at:
+public/img/Diagrama.png
 
-To build the project run:
+Equipe de Desenvolvimento | Development Team
 
-```bash
-ng build
-```
+Roberto Micaías — Documentação, Estrutura e Integração API
+Documentation, Structure, and API Integration
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+🧱 Requisitos do Projeto | Project Requirements
 
-## Running unit tests
+✔️ Exibir lista de produtos consumindo API JSON Server
+✔️ Cadastrar novos produtos via Service Angular
+✔️ Layout modular e responsivo
+✔️ Persistência em db.json
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+✔️ Display product list consuming JSON Server API
+✔️ Register new products via Angular Service
+✔️ Modular and responsive layout
+✔️ Data persistence in db.json
 
-```bash
-ng test
-```
+Observações | Notes
 
-## Running end-to-end tests
+O arquivo db.json deve conter pelo menos:
+The db.json file must contain at least:
 
-For end-to-end (e2e) testing, run:
+{
+  "produtos": []
+}
 
-```bash
-ng e2e
-```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Caso apareça erro de tipos, instale:
+If type definition errors appear, install:
 
-## Additional Resources
+npm install --save-dev @types/node
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+🏁 Versão Final | Final Version
+
+Loja Gamer — versão funcional e estável (Outubro/2025)
+Gamer Store — functional and stable release (October/2025)
+Desenvolvido como parte da atividade de integração de APIs e Angular.
+Developed as part of an academic project focused on API integration with Angular.
+
+🧾 Licença | License
+
+Este projeto é de uso educacional e livre para fins de estudo.
+This project is open and free for educational purposes.
