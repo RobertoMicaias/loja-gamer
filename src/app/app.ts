@@ -14,10 +14,8 @@ import { LoginComponent } from './login/login';
     MaterialModule,
     RouterOutlet,
     MenuComponent,
-    HomeComponent,
-    FooterComponent,
-    LoginComponent
-  ],
+    FooterComponent
+],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

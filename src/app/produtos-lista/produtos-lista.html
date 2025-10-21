@@ -1,0 +1,19 @@
+<main>
+  <h2>Catálogo de Produtos</h2>
+
+  <div class="produto-container" *ngIf="produtos$ | async as produtos; else carregando">
+    <div *ngFor="let p of produtos" class="produto-card">
+      <mat-card>
+        <mat-card-title>{{ p.nome }}</mat-card-title>
+        <mat-card-content>
+          <p>{{ p.descricao }}</p>
+          <p><strong>Preço:</strong> R$ {{ p.preco }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+
+  <ng-template #carregando>
+    <p style="color: white;">Carregando produtos...</p>
+  </ng-template>
+</main>
